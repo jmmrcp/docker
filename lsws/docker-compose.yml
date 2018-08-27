@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+    openlitespeed:
+        image: jmmrcp/lsws:1.4.28
+        ports:
+            - 80:8088
+        volumes:
+            - ./etc/:/etc/litespeed/
+            - ./html/:/var/lib/litespeed/Example/html/
